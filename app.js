@@ -60,7 +60,7 @@ store.on("error", (e) => {
 
 
 app.use(session({
-  
+  store, 
   secret: process.env.SECRET,
   resave: false,
   saveUninitialized: false,
